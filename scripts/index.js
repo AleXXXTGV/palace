@@ -133,6 +133,30 @@ let createRoomsSwiper = () => {
     });
 }
 
+new Swiper(".reviewsSlider", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        navigation: {
+            nextEl: ".reviewsNext",
+            prevEl: ".reviewsPrev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            800: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
+
+
+    });
+
 let roomsArr = []
 for (let roomFromHTML of roomsFromHTML) {
     let newRoomInArr = {
@@ -232,6 +256,8 @@ new Swiper(".attractions__mobileSlider", {
     },
 });
 
+
+
 let attractionsPaginationsBtns = document.querySelectorAll('.swiper-pagination-bullet')
 let swiper_attractions_pagination_modalPC = document.querySelector('.swiper-attractions-pagination-modalPC')
 let attractions_navigation_buttons = document.querySelectorAll('.attractions-navigation-button')
@@ -297,4 +323,3 @@ if (window.outerWidth > 768) {
         changeAttractionModalPosition()
     }, 0);
 }
-

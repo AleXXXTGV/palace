@@ -217,7 +217,7 @@ body {
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(10px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none !important;
   }
 }
@@ -366,7 +366,7 @@ body {
 .header__mobile_link {
   @include adaptiv-font(21, 19);
   color: white;
-  
+
 }
 
 .header-mobile__navLinks {
@@ -441,8 +441,20 @@ body {
 
 .header-mobile-modal__language {
   display: flex;
-  justify-content: space-between;
   gap: 4px;
+  padding: 10px;
+  width: fit-content;
+  font-size: 16px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.header-mobile-modal__language_active {
+  border-radius: 3px;
+  border: solid #503AE1 1px;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -521,7 +533,7 @@ body {
   padding: 10px;
   max-width: 543px;
   margin: 30px auto;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(FINGERPRINTS_02_8_bits.png);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   background-blend-mode: normal, multiply;
   backdrop-filter: blur(6.5px);
   border-radius: 10px;
@@ -975,8 +987,17 @@ body {
 
 .services__items {
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
+  row-gap: 50px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services__FirstTwoItems {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   row-gap: 50px;
   column-gap: 24px;
   flex-wrap: wrap;
@@ -996,12 +1017,27 @@ body {
     max-width: none;
     width: 100%;
     justify-content: center;
+    align-items: center;
   }
 }
 
 .services__item-img {
   width: 76px;
-  height: 76px;
+    height: 76px;
+
+    @media (max-width: 1024px) {
+      width: 60px;
+      height: 60px;
+    }
+  img {
+    width: 76px;
+    height: 76px;
+
+    @media (max-width: 1024px) {
+      width: 60px !important;
+      height: 60px;
+    }
+  }
 }
 
 .services__item-text {
@@ -1017,6 +1053,7 @@ body {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.01em;
+  @include adaptiv-font(20, 18);
   color: #FFFFFF;
 }
 
@@ -1027,6 +1064,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.68);
   max-width: 252px;
+  @include adaptiv-font(17, 16);
 }
 
 .about {
@@ -1063,7 +1101,7 @@ body {
 }
 
 .about__titleMain {
-  @include adaptiv-font(46, 40);
+  @include adaptiv-font(46, 30);
   font-family: 'gothampro_bold';
   line-height: 150%;
   color: #FFFFFF;
@@ -1088,6 +1126,11 @@ body {
   }
 }
 
+.aboutItems__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .aboutItem {
   width: 100%;
   position: relative;
@@ -1098,6 +1141,7 @@ body {
   @media (max-width: 1024px) {
     justify-content: center;
     min-height: 481px;
+    align-items: flex-start;
   }
 }
 
@@ -1131,9 +1175,10 @@ body {
   left: 0;
 
   @media (max-width: 1024px) {
-    top: 50%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    padding: 30px 15px;
   }
 }
 
@@ -1142,7 +1187,7 @@ body {
   left: auto;
 
   @media (max-width: 1024px) {
-    top: 50%;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }

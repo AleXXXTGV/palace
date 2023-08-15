@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shohjahon Palace</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
+        
         <div class="container header__container">
-            <div class="logo-under"></div>
             <div class="header-container__left">
                 <nav class="navLinks">
-                    <a href="#" class="navLink">Link</a>
-                    <a href="#" class="navLink">Link</a>
-                    <a href="#" class="navLink">Link</a>
+                    <a href="#services" class="navLink scroll-to">Services</a>
+                    <a href="#rooms" class="navLink scroll-to">Our Rooms</a>
+                    <a href="#about" class="navLink scroll-to">About us</a>
                 </nav>
             </div>
             <div class="logo-wrapper">
@@ -37,7 +39,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="tel:+998557050001" class="number"><img src="./img/tel.svg" alt="tel" class="number__img">+ 998 (55) 705 00 01</a>
+                    <a href="tel:+998557050001" class="number"><img src="./img/tel.svg" alt="tel" class="number__img">+
+                        998 (55) 705 00 01</a>
                 </div>
             </div>
         </div>
@@ -55,20 +58,21 @@
         <div class="header-mobile__modal">
             <div class="container">
                 <nav class="header-mobile__navLinks">
-                    <a href="#" class="header-mobile__navLink">Link</a>
-                    <a href="#" class="header-mobile__navLink">Link</a>
-                    <a href="#" class="header-mobile__navLink">Link</a>
+                    <a href="#services" class="header-mobile__navLink scroll-to">Services</a>
+                    <a href="#rooms" class="header-mobile__navLink scroll-to">Our Rooms</a>
+                    <a href="#about" class="header-mobile__navLink scroll-to">About us</a>
                 </nav>
                 <div class="header-mobile-modal__number">
                     <p class="header-mobile-modal-number__text">Reception</p>
-                    <a href="tel:+998557050001" class="number"><img src="./img/tel.svg" alt="tel" class="number__img">+ 998 (55) 705 00 01</a>
+                    <a href="tel:+998557050001" class="number"><img src="./img/tel.svg" alt="tel" class="number__img">+
+                        998 (55) 705 00 01</a>
                 </div>
                 <div class="socialMediaLinks">
                     <p class="socialMediaLinks__text">We are in social networks</p>
                     <div class="socialMediaLinks__pictures">
-                        <a href="#"><img src="./img/facebook.svg" alt="facebook" class="socialMediaLink"></a>
-                        <a href="#"><img src="./img/instagram.svg" alt="instagram" class="socialMediaLink"></a>
-                        <a href="#"><img src="./img/telegram.svg" alt="telegram" class="socialMediaLink"></a>
+                        <a href="#" target="_blank"><img src="./img/facebook.svg" alt="facebook" class="socialMediaLink"></a>
+                        <a href="https://instagram.com/shohjahon_palace?igshid=MzRlODBiNWFlZA== " target="_blank"><img src="./img/instagram.svg" alt="instagram" class="socialMediaLink"></a>
+                        <a href="https://t.me/shohjahon_palace" target="_blank"><img src="./img/telegram.svg" alt="telegram" class="socialMediaLink"></a>
                     </div>
                 </div>
                 <div class="header-mobile-modal__languages">
@@ -84,7 +88,1048 @@
             </div>
         </div>
     </header>
-    <script src="./scripts/index.js"></script>
+    
+    <main>
+        <div class="logo-under"></div>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero-container__text">
+                    <h1 class="hero__title">
+                        Welcome to
+                        Shohjahon Palace Hotel
+                    </h1>
+                    <p class="hero__undertitle">
+                        One of the most popular places of temporary residence for guests of Samarkand is the Shohjahon
+                        Palace Hotel, which has a good location in the city center.
+                    </p>
+                </div>
+                <div class="hero-container__bookingWrapper"></div>
+            </div>
+        </section>
+        <section class="rooms" id="rooms">
+            <div class="container">
+                <p class="rooms__title">
+                    Our Rooms
+                </p>
+                <div class="rooms__categories">
+                    <p class="rooms__category rooms__category_active" id="all">All rooms</p>
+                    <p class="rooms__category" id="luxe">Lux</p>
+                    <p class="rooms__category" id="standard">Standard</p>
+                </div>
+                <div class="rooms__categories_mobile">
+                    <p class="rooms__category_mobile_text"></p>
+                    <p class="rooms__category_mobile" id="luxe">Lux</p>
+                    <p class="rooms__category_mobile" id="standard">Standard</p>
+                    <div class="rooms__categories_mobile-chips">
+                        <p class="rooms__category_mobile  rooms__category_active" id="all">All Rooms</p>
+                        <p class="rooms__category_mobile " id="luxe">Luxe</p>
+                        <p class="rooms__category_mobile " id="standard">Standard</p>
+                    </div>
+                </div>
+                <div class="rooms-slider">
+                    <div class="swiper-button-next">
+                        <img src="./img/sliderArrow.svg" alt="">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="./img/sliderArrow.svg" alt="">
+                    </div>
+                    <!-- Swiper -->
+                    <div class="roomsSlider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide roomSlide" id="standard">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category standard">Standard</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide roomSlide" id="luxe">
+                                    <div class="room">
+                                        <div class="room__inner">
+                                            <div class="room__face room__face_front">
+                                                <div class="roomImgBackgroundWrapper">
+                                                    <div class="roomImgBackgroundImgWrapper">
+                                                        <img src="./img/room1_1.png" alt="roomBackground1"
+                                                            class="roomImgBackground roomImgBackground_active">
+                                                        <img src="./img/room1_2.png" alt="roomBackground2"
+                                                            class="roomImgBackground">
+                                                        <img src="./img/room1_3.png" alt="roomBackground3"
+                                                            class="roomImgBackground">
+                                                    </div>
+                                                    <div class="roomImgBackgroundPaginationWrapper">
+                                                        <button
+                                                            class="roomImgBackgroundPagination roomImgBackgroundPagination_active"
+                                                            value="0"></button>
+                                                        <button class="roomImgBackgroundPagination" value="1"></button>
+                                                        <button class="roomImgBackgroundPagination" value="2"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="room__face_front-right">
+                                                    <div class="room__category luxe">Luxe</div>
+                                                    <div class="room__face_front-info">
+                                                        <div class="room-name-price-wrapper usn">
+                                                            <p class="room-name">Comfort room</p>
+                                                            <p class="room-price">55$/day</p>
+                                                        </div>
+                                                        <div class="room-icons usn">
+                                                            <div class="room-size">
+                                                                <img src="./img/roomSize.svg" alt="roomSize">
+                                                                <p>48m<sup>2</sup></p>
+                                                            </div>
+                                                            <img src="./img/bed.svg" alt="bed">
+                                                            <img src="./img/bathroom.svg" alt="bathroom">
+                                                            <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                            <img src="./img/wifi.svg" alt="wifi">
+                                                            <img src="./img/noSmoking.svg" alt="noSmoking">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="room__face room__face_back">
+                                                <div class="capacity">
+                                                    <p>Accommodates 2 guests.</p>
+                                                    <img src="./img/close.svg" alt="close" class="room_close">
+                                                </div>
+                                                <div class="roomServices">
+                                                    <div class="roomServiceAndGrade">
+                                                        <div class="flex aic jcsb"><img src="./img/noSmoking.svg"
+                                                                alt="noSmoking">Non-smoking room</div>
+                                                        <span class="grade"><img src="./img/star.svg" alt="star"> 3.5</span>
+                                                    </div>
+                                                    <p class="roomService">
+                                                        <img src="./img/breakfast.svg" alt="breakfast">Breakfast included
+                                                        for this cost
+                                                    </p>
+                                                </div>
+                                                <div class="room__face_back-line"></div>
+                                                <div class="room_facilities">
+                                                    <p>All facilities in the room:</p>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bed.svg" alt="bed">
+                                                        Large bed for 2 people
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/bathroom.svg" alt="bathroom">
+                                                        Private Bathroom
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/hairDryer.svg" alt="hairDryer">
+                                                        Hair dryer
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/tv.svg" alt="tv">
+                                                        TV
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/snow.svg" alt="snow">
+                                                        Air conditioning
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/wifi.svg" alt="wifi">
+                                                        Free Wi-Fi
+                                                    </div>
+                                                    <div class="room_facilitie">
+                                                        <img src="./img/fridge.svg" alt="fridge">
+                                                        Mini fridge
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="bookNow">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container services__container">
+                <p class="services__title">
+                    Our service
+                    <div class="services__title-line"></div>
+                </p>
+                <div class="services__items">
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div>
+                            <img src="./img/service1.svg" alt="services__item-img" class="services__item-img">
+                        </div>
+                        <div class="services__item-text">
+                            <p class="services__item-title">Restaurant</p>
+                            <p class="services__item-info">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__bg"></div>
+            <div class="container about__container">
+                <div class="about__titleWrapper">
+                    <p class="about__titleMain">
+                        About our hotel
+                    </p>
+                    <div class="about__line"></div>
+                    <p class="about__titleInfo">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <div class="aboutItems__wrapper">
+                    <div class="aboutItem">
+                        <div class="aboutItem-img">
+                            <img src="./img/about1.png" alt="about1">
+                        </div>
+                        <div class="aboutItem__textWrapper aboutItem__textWrapper_first">
+                            <p class="aboutItem__textWrapper__slogan">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                            <button class="aboutItem__viewRoomsBtn">View hotel rooms <img src="./img/viewRoomsLink.svg" alt="viewRoomsLink"></button>
+                        </div>
+                    </div>
+                    <div class="aboutItem aboutItem_second">
+                        <div class="aboutItem-img">
+                            <img src="./img/about2.png" alt="about2">
+                        </div>
+                        <div class="aboutItem__textWrapper">
+                            <p class="aboutItem__textWrapper__slogan aboutItem__textWrapper__slogan_second">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <div class="aboutItem-img">
+                            <img src="./img/about1.png" alt="about1">
+                        </div>
+                        <div class="aboutItem__textWrapper aboutItem__textWrapper_first">
+                            <p class="aboutItem__textWrapper__slogan">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem aboutItem_second">
+                        <div class="aboutItem-img">
+                            <img src="./img/about2.png" alt="about2">
+                        </div>
+                        <div class="aboutItem__textWrapper">
+                            <p class="aboutItem__textWrapper__slogan aboutItem__textWrapper__slogan_second">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <div class="aboutItem-img">
+                            <img src="./img/about1.png" alt="about1">
+                        </div>
+                        <div class="aboutItem__textWrapper aboutItem__textWrapper_first">
+                            <p class="aboutItem__textWrapper__slogan">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem aboutItem_second">
+                        <div class="aboutItem-img">
+                            <img src="./img/about2.png" alt="about2">
+                        </div>
+                        <div class="aboutItem__textWrapper">
+                            <p class="aboutItem__textWrapper__slogan aboutItem__textWrapper__slogan_second">We choose comfort and luxury</p>
+                            <p class="aboutItem__textWrapper__title">Our Priority</p>
+                            <div class="about__line"></div>
+                            <p class="aboutItem__textWrapper__info">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="attractions">
+            <div class="container">
+                <p class="attractions__title">
+                    <span>Attractions</span>
+                    <span class="attractions__title_bottom">near the hotel</span>
+                </p>
+                <div class="attractions__line"></div>
+                <div class="swiper mySwiper2 attractions__pcSlider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/attraction1.png" alt="attraction"></div>
+                      <div class="swiper-slide"><img src="./img/attraction2.png" alt="attraction"></div>
+                      <div class="swiper-slide"><img src="./img/attraction3.png" alt="attraction"></div>
+                      <div class="swiper-slide"><img src="./img/attraction4.png" alt="attraction"></div>
+                      <div class="swiper-slide"><img src="./img/attraction5.png" alt="attraction"></div>
+                    </div>
+                    <div class="attractions-navigation-buttons">
+                        <div class="swiper-button-prev attraction_prev attractions-navigation-button">
+                            <img src="./img/arrow-left.svg" alt="sliderArrow">
+                        </div>
+                        <div class="swiper-button-next attraction_next attractions-navigation-button">
+                            <img src="./img/arrow-right.svg" alt="sliderArrow">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-attractions-pagination">
+                    </div>
+                    <div class="swiper-attractions-pagination-modal swiper-attractions-pagination-modalPC">
+                        <div class="swiper-attractions-pagination-modal__title">
+                            <p class="modalChangeableElement" value="0">Mausoleum of Khoja Ahmed Yasawi</p>
+                            <p class="modalChangeableElement" value="1" hidden>Mausoleum of Khoja Ahmed Yasawi2</p>
+                            <p class="modalChangeableElement" value="2" hidden>Mausoleum of Khoja Ahmed Yasawi3</p>
+                            <p class="modalChangeableElement" value="3" hidden>Mausoleum of Khoja Ahmed Yasawi4</p>
+                            <p class="modalChangeableElement" value="4" hidden>Mausoleum of Khoja Ahmed Yasawi5</p>
+                        </div>
+                        <div class="swiper-attractions-pagination-modal__text">
+                            <p class="modalChangeableElement" value="0">The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi.</p>
+                            <p class="modalChangeableElement" value="1" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi2.</p>
+                            <p class="modalChangeableElement" value="2" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi3.</p>
+                            <p class="modalChangeableElement" value="3" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi4.</p>
+                            <p class="modalChangeableElement" value="4" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi5.</p>
+                        </div>
+                        <div class="swiper-attractions-pagination-modal__locationInfo">
+                            <div class="swiper-attractions-pagination-modal__locationInfo-left">
+                                <div class="swiper-attractions-pagination-modal__locationInfo-place">
+                                    <img src="./img/place.svg" alt="place">
+                                    <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="0">Street - Oksaroy 1</p>
+                                    <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="1" hidden>Street - Oksaroy 2</p>
+                                    <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="2" hidden>Street - Oksaroy 3</p>
+                                    <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="3" hidden>Street - Oksaroy 4</p>
+                                    <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="4" hidden>Street - Oksaroy 5</p>
+                                </div>
+                                <div class="swiper-attractions-pagination-modal__locationInfo-walk">
+                                    <img src="./img/walk.svg" alt="walk">
+                                    <p>Walk 
+                                        <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="0">45</span>
+                                        <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="1" hidden>50</span>
+                                        <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="2" hidden>55</span>
+                                        <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="3" hidden>60</span>
+                                        <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="4" hidden>65</span>
+                                     min</p>
+                                </div>
+                            </div>
+                            <div class="swiper-attractions-pagination-modal__locationInfo-geoposition">
+                                <a class="modalChangeableElement" href="https://goo.gl/maps/bM5QxWAZXpYLLgnw7" value="0" target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                <a class="modalChangeableElement" href="https://goo.gl/maps/LvqXyKbpSuGnZvdk6" value="1" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                <a class="modalChangeableElement" href="https://goo.gl/maps/ZVr4TgYb7UnNvzUC6" value="2" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                <a class="modalChangeableElement" href="https://goo.gl/maps/Ksoqim8pMVnemgJR7" value="3" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                <a class="modalChangeableElement" href="https://goo.gl/maps/sqXjSyaxJKyF8vvc7" value="4" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/paginationLine.svg" alt="paginationLine" class="paginationLine">
+                </div>
+                <div class="swiper attractions__mobileSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img/attraction1.png" alt="attraction"></div>
+                        <div class="swiper-slide"><img src="./img/attraction2.png" alt="attraction"></div>
+                        <div class="swiper-slide"><img src="./img/attraction3.png" alt="attraction"></div>
+                        <div class="swiper-slide"><img src="./img/attraction4.png" alt="attraction"></div>
+                        <div class="swiper-slide"><img src="./img/attraction5.png" alt="attraction"></div>
+                      </div>
+                      <div class="attractions__mobileSlider__bottom">
+                        <div class="attractions-navigation-buttons">
+                            <div class="attraction_prev attractions-navigation-button">
+                                <img src="./img/arrow-left.svg" alt="sliderArrow">
+                            </div>
+                            <div class="attraction_next attractions-navigation-button">
+                                <img src="./img/arrow-right.svg" alt="sliderArrow">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-attractions-pagination">
+                        </div>
+                        <img src="./img/paginationLineMobile.svg" alt="paginationLine" class="paginationLine">
+                      </div>
+                      
+                      <div class="swiper-attractions-pagination-modal swiper-attractions-pagination-modalPC">
+                          <div class="swiper-attractions-pagination-modal__title">
+                              <p class="modalChangeableElement" value="0">Mausoleum of Khoja Ahmed Yasawi</p>
+                              <p class="modalChangeableElement" value="1" hidden>Mausoleum of Khoja Ahmed Yasawi2</p>
+                              <p class="modalChangeableElement" value="2" hidden>Mausoleum of Khoja Ahmed Yasawi3</p>
+                              <p class="modalChangeableElement" value="3" hidden>Mausoleum of Khoja Ahmed Yasawi4</p>
+                              <p class="modalChangeableElement" value="4" hidden>Mausoleum of Khoja Ahmed Yasawi5</p>
+                          </div>
+                          <div class="swiper-attractions-pagination-modal__text">
+                              <p class="modalChangeableElement" value="0">The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi.</p>
+                              <p class="modalChangeableElement" value="1" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi2.</p>
+                              <p class="modalChangeableElement" value="2" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi3.</p>
+                              <p class="modalChangeableElement" value="3" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi4.</p>
+                              <p class="modalChangeableElement" value="4" hidden>The famous mausoleum is named after the prominent Muslim figure and poet Khoja Ahmed Yasawi5.</p>
+                          </div>
+                          <div class="swiper-attractions-pagination-modal__locationInfo">
+                              <div class="swiper-attractions-pagination-modal__locationInfo-left">
+                                  <div class="swiper-attractions-pagination-modal__locationInfo-place">
+                                      <img src="./img/place.svg" alt="place">
+                                      <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="0">Street - Oksaroy 1</p>
+                                      <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="1" hidden>Street - Oksaroy 2</p>
+                                      <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="2" hidden>Street - Oksaroy 3</p>
+                                      <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="3" hidden>Street - Oksaroy 4</p>
+                                      <p class="swiper-attractions-pagination-modal__locationInfo-placeText modalChangeableElement" value="4" hidden>Street - Oksaroy 5</p>
+                                  </div>
+                                  <div class="swiper-attractions-pagination-modal__locationInfo-walk">
+                                      <img src="./img/walk.svg" alt="walk">
+                                      <p>Walk 
+                                          <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="0">45</span>
+                                          <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="1" hidden>50</span>
+                                          <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="2" hidden>55</span>
+                                          <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="3" hidden>60</span>
+                                          <span class="swiper-attractions-pagination-modal__locationInfo-walkNumber modalChangeableElement" value="4" hidden>65</span>
+                                       min</p>
+                                  </div>
+                              </div>
+                              <div class="swiper-attractions-pagination-modal__locationInfo-geoposition">
+                                  <a class="modalChangeableElement" href="https://goo.gl/maps/bM5QxWAZXpYLLgnw7" value="0" target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                  <a class="modalChangeableElement" href="https://goo.gl/maps/LvqXyKbpSuGnZvdk6" value="1" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                  <a class="modalChangeableElement" href="https://goo.gl/maps/ZVr4TgYb7UnNvzUC6" value="2" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                  <a class="modalChangeableElement" href="https://goo.gl/maps/Ksoqim8pMVnemgJR7" value="3" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                                  <a class="modalChangeableElement" href="https://goo.gl/maps/sqXjSyaxJKyF8vvc7" value="4" hidden target="_blank"><img src="./img/location.svg" alt="location"></a>
+                              </div>
+                          </div>
+                      </div>
+                     
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container reviewsContainer">
+                <p class="reviews__title">
+                    What our guests <span>say about hotel</span>
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+    </script>
+    <script src="./scripts/index.js">
+
+    </script>
 </body>
 
 </html>

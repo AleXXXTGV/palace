@@ -608,6 +608,7 @@ body {
 
 .room__inner.isFlipped {
   transform: rotateY(180deg);
+  
 }
 
 .room__face {
@@ -668,7 +669,7 @@ body {
 }
 
 .room__face_front-right {
-  padding: 15px 20px 15px 0px;
+  padding: 15px 20px 12px 0px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -817,6 +818,7 @@ body {
 }
 
 .room__face_back {
+  height: 100%;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
   border-radius: 10px;
@@ -824,9 +826,7 @@ body {
   position: absolute;
   top: 0;
   padding: 20px 15px 12px 15px;
-  z-index: 3;
-  height: 475px;
-
+  z-index: 0;
   @media (max-width: 375px) {
     padding: 10px 15px 12px 15px;
   }
@@ -1774,6 +1774,7 @@ body {
         transform: translateY(-35px);
         border: 9px solid #00000015;
         border-radius: 100px;
+        z-index: 3;
       }
     }
   }

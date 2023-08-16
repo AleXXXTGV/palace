@@ -91,6 +91,7 @@ let roomInnerFuncinal = () => {
         room__face_front_info_button.onclick = () => {
             let et = event.target.parentElement.parentElement.parentElement
             et.classList.toggle('isFlipped')
+            et.children[1].style.zIndex = 5
         }
     }
     let room_close_buttons = document.querySelectorAll('.room_close')

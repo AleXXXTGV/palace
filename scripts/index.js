@@ -91,7 +91,7 @@ let roomInnerFuncinal = () => {
         room__face_front_info_button.onclick = () => {
             let et = event.target.parentElement.parentElement.parentElement
             et.classList.toggle('isFlipped')
-            et.children[1].style.zIndex = 5
+            et.children[1].classList.toggle('room__face_back_active')
         }
     }
     let room_close_buttons = document.querySelectorAll('.room_close')
@@ -100,6 +100,7 @@ let roomInnerFuncinal = () => {
         room_close_button.onclick = () => {
             let et = event.target.parentElement.parentElement.parentElement
             et.classList.remove('isFlipped')
+            et.children[1].classList.remove('room__face_back_active')
         }
     }
 }

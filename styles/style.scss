@@ -1039,6 +1039,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+  @media (max-width: 425px) {
+    min-height: 118px;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .services__item-img {
@@ -1066,6 +1071,15 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
+  @media (max-width: 1024px) {
+    max-width: 215px;
+  }
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+  @media (max-width: 455px) {
+    max-width: 150px;
+  }
 }
 
 .services__item-title {
@@ -1076,6 +1090,9 @@ body {
   letter-spacing: 0.01em;
   @include adaptiv-font(20, 18);
   color: #FFFFFF;
+  @media (max-width: 500px) {
+    margin: 0 auto;
+  }
 }
 
 .services__item-info {
@@ -1085,7 +1102,8 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.68);
   max-width: 252px;
-  @include adaptiv-font(17, 16);
+  @include adaptiv-font(17, 15);
+
 }
 
 .about {
@@ -1815,7 +1833,7 @@ body {
         transform: translateY(-35px);
         border: 9px solid #00000015;
         border-radius: 100px;
-        z-index: 3;
+        z-index: 100;
       }
     }
   }

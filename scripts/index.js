@@ -140,7 +140,7 @@ let createRoomsSwiper = () => {
 new Swiper(".reviewsSlider", {
         slidesPerView: 3,
         spaceBetween: 24,
-        roundLengths: true,
+        roundLengths: false,
         navigation: {
             nextEl: ".reviewsNext",
             prevEl: ".reviewsPrev",

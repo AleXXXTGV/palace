@@ -1881,6 +1881,7 @@ body {
   transform: translateY(-35px);
   border: 9px solid rgba(0, 0, 0, 0.0823529412);
   border-radius: 100px;
+  position: relative;
   z-index: 100;
 }
 
